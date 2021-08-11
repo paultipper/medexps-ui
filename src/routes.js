@@ -10,7 +10,7 @@ import ProductList from 'src/pages/ProductList';
 import Register from 'src/pages/Register';
 import Settings from 'src/pages/Settings';
 
-const routes = [
+const routes = (isLoggedIn, oktaAuth) => [
   {
     path: 'app',
     element: <DashboardLayout />,
